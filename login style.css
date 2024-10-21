@@ -37,10 +37,6 @@ body {
     font-size: 20px;
 }
 
-.password::placeholder{
-    color: #830c00;
-}
-
 .logo {
     position: absolute;
     top: 20px;  /* Ajusta este valor para la posición vertical */
@@ -73,8 +69,10 @@ img {
 }
 
 .form {
-    padding-top: 20px;
-    margin: 30px 50px;
+    /* cuanto se mueve hacia abajo los inputs */
+    padding-top: 25px;
+    /* espacio entre los inputs y el form */
+    margin: 20px 120px;
 }
 
 input, .btn-login {
@@ -87,6 +85,10 @@ input, .btn-login {
     border-radius: 10px;
     font-size: 20px;
     box-sizing: border-box;
+    /* color del texto de los inputs */
+    color: #830c00;
+    /* grosor del texto de los inputs */
+    font-weight:700;
 }
 
 .btn-login {
@@ -100,5 +102,9 @@ input, .btn-login {
 
 .text-container {
     text-align: center;
-    margin-top: 10px; /* Ajusta el espacio superior */
+    margin-top: 5px; /* Ajusta el espacio superior */
+}
+
+.register, a{
+    color: blue;
 }
