@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    min-width: 100vw;
+    position: relative;
+}
+
+/* menu superior */
+.header{
+    background-color: #830c00;
+    padding: 30px 50px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 79px;
+    height: 53px;
+    /* espacio del logo */
+    margin-right: 10px;
+}
+
+/* Elementos de la lista flotante a la derecha */
+.nav-left{
+    float: left;
+}
+
+/* Estilo de la lista del menu navegar */
+.nav-left li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 15px;
+}
+
+/* Texto del menu de navegar */
+.nav-left li a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-weight:700;
+    font-size: 18px;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    margin-left: 40px; /* Ajusta la distancia al lado izquierdo */
+}
+
+/* Estilos del cuadro de busqueda */
+.search{
+    border-radius: 15px;
+    padding: 10px 20px;
+    width: 350px;
+    /* Mover a la derecha del menu */
+    margin-left: 50px;
+}
+
+/* icono de busqueda */
+.search-container i {
+    margin: 12px 352px;
+    position: absolute;
+    font-size: 18px; /* Ajusta el tamaño del icono */
+    color: #D9D9D9; /*Cambia el color del icono*/
+}
+
+/* Para modificar el texto adentro del input de busqueda */
+input::placeholder {
+    /* Color del texto */
+    color: #830c00;
+    /* Tipografía */
+    font-family: "Montserrat", sans-serif;
+    /* Tamaño de fuente */
+    font-size: 16px;
+    /* Peso de la fuente */
+    font-weight: 800;
+}
+
+/* Estilo lista desplegable */
+.places{
+    padding: 10px 10px;
+    margin-left: 150px;
+    background-color: #830c00;
+    /* Tipografía */
+    font-family: "Montserrat", sans-serif;
+    /* Color del texto */
+    color: #ffffff;
+    /* Borde */
+    border: none;
+    /* Tamaño de fuente */
+    font-size: 18px;
+    /* Peso de la fuente */
+    font-weight: 700;
+}
+
+/* perfil del usuario */
+.profile img{
+    width: 60px;
+    height: 60px;
+    margin-left: 170px;
+}
+
+
