@@ -1,3 +1,5 @@
+/* Estilos del menu principal */
+
 *{
     margin: 0;
 }
@@ -16,7 +18,7 @@ body{
 /* menu superior */
 .header{
     background-color: #830c00;
-    padding: 30px 50px;
+    padding: 20px 40px;
 }
 
 .nav-container {
@@ -104,10 +106,166 @@ input::placeholder {
 }
 
 /* perfil del usuario */
-.profile img{
-    width: 60px;
-    height: 60px;
-    margin-left: 170px;
+.profile {
+    position: relative;
+    display: inline-block;
 }
 
+.profile-icon img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    margin-left: 170px; /*lo manda a la izquierda*/
+}
 
+/* Menú desplegable oculto inicialmente */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 5px;
+    width: 150px;
+    z-index: 1;
+}
+
+/* Estilos de los enlaces del menú */
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    color: #f2f2f2;
+    background-color: #830c00;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f2f2f2;
+    color: #830c00;
+}
+
+/* Mostrar el menú al pasar el ratón o al hacer clic */
+.profile:hover .dropdown-menu,
+.profile:focus-within .dropdown-menu {
+    display: block;
+}
+
+/* Estilos del login */
+.login-page{
+    background-color: #830c00;
+    font-family: "Montserrat", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* columna para que el logo quede arriba del contenedor */
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px; /* espacio del logo arriba del contenedor */
+}
+
+.login-page .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px; /* espacio del logo arriba del contenedor */
+}
+
+.login-page .container {
+    background-color: rgb(255, 255, 255);
+    /* ancho */
+    width: 500px;
+    /* alto */
+    height: 450px;
+    /* margenes de alto */
+    padding-top: 50px;
+    /* subir para arriba el contenedor blanco */
+    margin-bottom: 10px;
+    position: relative;
+    /* espacio entre el contenedor y los componentes lado izquierdo */
+    padding-left: 70px;
+    /* espacio entre el contenedor y los componentes lado derecho */
+    padding-right: 70px;
+    border-radius: 15px;
+}
+
+.login-page .logo {
+    position: absolute;
+    top: 20px;  /* Ajusta este valor para la posición vertical */
+    left: 45%; /* Ajusta este valor para moverlo hacia la izquierda */
+    width: 120px;
+    height: 100px;
+}
+
+.login-page img {
+    width: 100%;
+    height: 100%;
+}
+
+.login-page .title{
+    color: #AD6D01;
+    /* grosor del texto */
+    font-weight:700;
+    /* tamaño del texto */
+    font-size: 30px;
+    text-align: center;
+    /* mover el texto hacia la derecha */
+    margin: 120px;
+}
+
+.login-page .user, .password{
+    color: #830c00;
+    font-weight:400;
+    font-size: 20px;
+}
+
+.login-page .form {
+    /* cuanto se mueve hacia abajo los inputs */
+    /* padding-top: 25px; */
+    align-items: center;
+    /* espacio entre los inputs y el form */
+    margin: 20px 120px;
+}
+
+.login-page input, .btn-login {
+    background-color: #f3f3f3;
+    width: 100%;
+    padding: 10px 20px;
+    /* espacio entre los componentes usuario y contraseña */
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+    /* color del texto de los inputs */
+    color: #830c00;
+    /* grosor del texto de los inputs */
+    font-weight:700;
+}
+
+.login-page .btn-login {
+    background-color: #AD6D01;
+    padding: 10px 10px;
+    color: white;
+    cursor: pointer;
+    margin-top: 50px;
+    font-weight:600;
+}
+
+.login-page .text-container {
+    text-align: center;
+    margin-top: 5px; /* Ajusta el espacio superior */
+}
+
+.login-page .register, a{
+    color: #003EDF;
+}
